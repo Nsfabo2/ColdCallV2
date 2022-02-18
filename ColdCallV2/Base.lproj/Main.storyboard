@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColdCallV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z5-ze-NZp">
+                                <rect key="frame" x="0.0" y="79" width="414" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si5-IO-X9Z">
+                                <rect key="frame" x="0.0" y="430" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOr-rB-fb8">
+                                <rect key="frame" x="0.0" y="731" width="414" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cold Call">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="strokeColor" systemColor="systemBackgroundColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getRandomNameNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zax-x8-mOT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Si5-IO-X9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aui-4k-74v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0z5-ze-NZp" secondAttribute="trailing" id="CRe-fH-vCc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pOr-rB-fb8" secondAttribute="bottom" constant="100" id="Fpf-Cm-OgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pOr-rB-fb8" secondAttribute="trailing" id="H0T-4A-jbm"/>
+                            <constraint firstItem="Si5-IO-X9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IVe-i5-0S7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Si5-IO-X9Z" secondAttribute="trailing" id="LSR-v1-Jhy"/>
+                            <constraint firstItem="0z5-ze-NZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRY-Rf-iRH"/>
+                            <constraint firstItem="pOr-rB-fb8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f8a-eR-gV6"/>
+                            <constraint firstItem="0z5-ze-NZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="iMT-PJ-apR"/>
+                            <constraint firstItem="0z5-ze-NZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lnN-gt-ag8"/>
+                            <constraint firstItem="Si5-IO-X9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oGP-UQ-xt9"/>
+                            <constraint firstItem="pOr-rB-fb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQZ-7t-K7D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NameLabel" destination="0z5-ze-NZp" id="wOY-8U-UdA"/>
+                        <outlet property="NumberLabel" destination="Si5-IO-X9Z" id="0tx-FE-CAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
